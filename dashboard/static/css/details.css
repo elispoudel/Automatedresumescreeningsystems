@@ -1,0 +1,73 @@
+/* Style for file input (Choose Files) */
+input[type="file"] {
+    width: 220px;
+    height: 40px;
+    background-color: #f8f9fa;
+    color: #333;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+/* General button styling */
+.btn {
+    display: inline-block;
+    height: 40px;
+    width: 150px;
+    line-height: 40px;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 5px 0;
+}
+
+/* Primary button styling: Match Resumes */
+.btn-primary {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Secondary button styling: Filter and Apply */
+.btn-secondary {
+    background-color: #6c757d;
+    color: #fff;
+}
+
+/* Align filter container to the right */
+#filter-container {
+    text-align: right;
+}
+
+/* Styling for the Filter button */
+#filter-btn {
+    margin-right: 10px;
+}
+
+/* Styling for the increment/decrement buttons in the filter panel */
+#increment-btn, #decrement-btn {
+    width: 35px;
+    height: 35px;
+    border: none;
+    background-color: #6c757d;
+    color: #fff;
+    border-radius: 5px;
+    margin: 0 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Additional styling for results container for visibility */
+#results-container {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 15px;
+    background-color: #fdfdfd;
+}
+
+/* Optional: Hover effects for buttons */
+.btn:hover, #increment-btn:hover, #decrement-btn:hover, #apply-filter-btn:hover {
+    opacity: 0.9;
+}

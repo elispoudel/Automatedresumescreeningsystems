@@ -1,0 +1,94 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8fdf6;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+/* User Info */
+.user-info {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Fix job container */
+.job-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; /* Align items from the left */
+    gap: 20px; /* Ensure spacing between cards */
+    padding: 80px 20px 20px 20px; /* Adjusted padding to fit navbar */
+    max-width: 70%; /* Prevent container from being too wide */
+    margin: 0 auto; /* Center the job-container */
+}
+
+/* Job Cards */
+.job-card {
+    width: 300px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 16px;
+    text-align: center;
+    flex: 1 1 calc(33.333% - 20px); /* Allow cards to spread out evenly */
+    min-width: 300px;
+}
+
+/* Responsive Fix: Center on Smaller Screens */
+@media (max-width: 1024px) {
+    .job-container {
+        justify-content: center; /* Center cards on medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .job-container {
+        justify-content: center;
+    }
+    .job-card {
+        flex: 1 1 100%; /* Make each card full width */
+    }
+}
+
+.job-card h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+
+.job-card p {
+    color: #666;
+    font-size: 14px;
+    margin: 22px 0;
+}
+
+/* Buttons */
+.details-btn {
+    background: #8bc34a;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.details-btn:hover {
+    background: #7cb342;
+}
+
+ /* Two-column layout for details view */
+ .details-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.job-details, .upload-container {
+    flex: 1;
+    min-width: 300px;
+}
